@@ -8,7 +8,7 @@ set -o errtrace
 error_handler() {
     echo "Error occurred in script at line: ${BASH_LINENO[0]}, command: '${BASH_COMMAND}'"
 }
-
+BUILD_DAY=$(date '+%Y.%m.%d')
 # 设置trap捕获ERR信号
 trap 'error_handler' ERR
 
@@ -456,7 +456,7 @@ update_nss_pbuf_performance() {
 set_build_signature() {
     local file="$BUILD_DIR/feeds/luci/modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js"
     if [ -d "$(dirname "$file")" ] && [ -f $file ]; then
-        sed -i "s/(\(luciversion || ''\))/(\1) + (' \/ build by Simon $BUILD_DATE')/g" "$file"
+        sed -i "s/(\(luciversion || ''\))/(\1) + (' \/ build by Simon on $BUILD_DAY')/g" "$file"
     fi
 }
 
