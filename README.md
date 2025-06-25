@@ -12,6 +12,7 @@ cd wrt_release
 
 仅编译无线宝亚瑟和兆能M2
 ./build.sh m2-ax1800-im
+
 编译京东云雅典娜(02)、亚瑟(01)、太乙(07)、AX5(JDC版):  
 ./build.sh jdcloud_ipq60xx_immwrt  
 ./build.sh jdcloud_ipq60xx_libwrt  
