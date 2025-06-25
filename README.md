@@ -11,6 +11,7 @@ git clone https://github.com/ZqinKing/wrt_release.git
 cd wrt_release  
 
 编译无线宝亚瑟和兆能M2:
+
 ./build.sh m2_ax1800_im
 
 编译京东云雅典娜(02)、亚瑟(01)、太乙(07)、AX5(JDC版):  
