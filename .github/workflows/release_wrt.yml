@@ -23,16 +23,16 @@ on:
           - zn_m2_immwrt
           - zn_m2_libwrt
           - x64_immwrt
-          - m2_ax1800_im
+          - m2_and_arthur_im
       runs-on:
         required: true
         description: Runs on...
         type: choice
         default: ubuntu-22.04
         options:
-          - ubuntu-24.04
           - ubuntu-22.04
-
+          - ubuntu-23.04
+          - ubuntu-22.04
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
